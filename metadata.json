@@ -1,0 +1,8 @@
+{
+  "name": "Color Match Breakout",
+  "description": "同じ色の球をブロックに当てて消していく、新感覚のカラーマッチ・ブロック崩しゲーム。パドルの色を切り替えて球の色をコントロールしよう！",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom glow animations and aesthetic layers */
+@keyframes neon-pulse {
+  0%, 100% {
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.4), 0 0 12px var(--glow-color, rgba(59, 130, 246, 0.6));
+  }
+  50% {
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.6), 0 0 20px var(--glow-color, rgba(59, 130, 246, 0.8));
+  }
+}
+
+.glow-text-blue {
+  --glow-color: rgba(34, 211, 238, 0.8);
+  animation: neon-pulse 2s infinite ease-in-out;
+}
+
+.glow-text-red {
+  --glow-color: rgba(236, 72, 153, 0.8);
+  animation: neon-pulse 2s infinite ease-in-out;
+}
+
+/* Hide scrollbar for extreme clean focus modes */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
